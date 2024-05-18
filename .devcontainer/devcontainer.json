@@ -1,0 +1,19 @@
+{
+    "name": "Moddable-tutorial",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "github.copilot",
+                "ms-vscode.cpptools"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "forwardPorts": [],
+    "postCreateCommand": "echo 'Container ready!'",
+    "runArgs": []
+}
