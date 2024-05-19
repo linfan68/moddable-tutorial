@@ -1,5 +1,5 @@
-# 使用Ubuntu 20.04作为基础镜像
-FROM ubuntu:20.04
+# 使用IDF 5.1.2作为基础镜像
+FROM espressif/idf:v5.1.2
 
 # 避免在构建过程中出现交互式提示
 ARG DEBIAN_FRONTEND=noninteractive
@@ -25,3 +25,5 @@ RUN apt-get install -y --no-install-recommends \
 # export PATH=$PATH:$MODDABLE/build/bin/lin/release
 ENV MODDABLE=/workspaces/moddable-tutorial/moddable
 ENV PATH=$PATH:$MODDABLE/build/bin/lin/release
+
+RUN echo ". $IDF_PATH/export.sh > /dev/null 2>&1" >> ~/.bashrc

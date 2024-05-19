@@ -14,6 +14,9 @@
     },
     "remoteUser": "root",
     "forwardPorts": [],
+    "mounts": [
+        "source=/dev,target=/dev,type=bind"
+    ],
     "postCreateCommand": "echo 'Container ready!'",
-    "runArgs": []
+    "runArgs": ["--privileged"]
 }
