@@ -21,6 +21,9 @@ RUN apt-get install -y --no-install-recommends \
     libgtk-3-dev \
     adwaita-icon-theme-full
 
+RUN bash -c "$(curl -fsSL https://gitee.com/RubyMetric/nvm-cn/raw/main/install.sh)"
+RUN . /root/.bashrc && nvm install 20 && npm install -g typescript
+
 # export MODDABLE=~/Projects/moddable
 # export PATH=$PATH:$MODDABLE/build/bin/lin/release
 ENV MODDABLE=/workspaces/moddable-tutorial/moddable
