@@ -23,6 +23,7 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN bash -c "$(curl -fsSL https://gitee.com/RubyMetric/nvm-cn/raw/main/install.sh)"
 RUN . /root/.bashrc && nvm install 20 && npm install -g typescript
+RUN . /root/.bashrc && npm install -g yarn
 
 # export MODDABLE=~/Projects/moddable
 # export PATH=$PATH:$MODDABLE/build/bin/lin/release
