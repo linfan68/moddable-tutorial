@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "types": [
+            "/workspaces/moddable-tutorial/moddable/xs/includes/xs"
+            , "/workspaces/moddable-tutorial/moddable/typings/global"
+            , "/workspaces/moddable-tutorial/moddable/typings/timer"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/system"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/digital"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/digitalbank"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/_common"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/analog"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/pwm"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/pulsecount"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/i2c"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/smbus"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/spi"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_io/serial"
+            , "/workspaces/moddable-tutorial/moddable/typings/embedded_provider/builtin"
+        ],
+    }
+}
